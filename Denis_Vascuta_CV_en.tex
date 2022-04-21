@@ -1,0 +1,96 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{casual}                % idem
+
+% character encoding
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[english,romanian]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Denis}
+\familyname{Vășcuță}
+
+\title{Curriculum Vitae}               % optional, remove the line if not wanted
+
+\address{Aleea Giurgeni nr. 8}{Bucharest, sector 3, 032582, Romania}    % optional, remove the line if not wanted
+\mobile{+(40) 764682424}                    % optional, remove the line if not wanted
+%\phone{0212303514}                      % optional, remove the line if not wanted
+\email{vascutadeniscristian@gmail.com}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+
+\cventry{2021--2025 (expected)}{Baccalaureate}{National College ,,Mihai Viteazu''}{Bucharest}{}{}
+\cventry{2017--2021}{National Assessment}{Secondary School no. 149}{Bucharest}{9.67/10}{}
+
+\section{Experience}
+
+\subsection{Projects and Activities}
+
+\cventry{December 2021}{Contestant}{Advent of Cyber}{TryHackMe}{}{Basic cybersecurity knowledge and experience}
+\cventry{November 2021}{Contestant}{Unbreakable România 2021, Autumn}{Bitsentinel}{Place 5/485 (2750/4550 points)}{Cybsercurity challenges}
+
+\subsection{Awards and Certificates}
+
+\cventry{working towards}{CompTIA Security+}{CompTIA}{}{}{}
+\cventry{2022}{eJPT (eLearnSecurity Junior Penetration Tester}{eLearnSecurity}{}{}{}
+\cventry{2021}{2nd Place (High School)}{Unbreakable Romania 2021, Autumn}{}{}{}
+
+\subsection{Topics of Interest}
+
+\cvline{Cybersecurity}{\small Take part in CTF (\textit{Capture the Flag}) contests. Develop cybersecurity content.}
+\cvline{Programming}{\small Write programs in Python and C++. Script / automate CTF solutions.}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\section{Abilities}
+
+\subsection{Foreign Languages}
+
+\cvlanguage{English}{Advanced}{}
+\cvlanguage{French}{Beginner}{}
+
+\subsection{Personal and Professional Skills}
+
+\cvlistitem{Good communication}
+\cvlistitem{Dynamic, sociable, adaptable}
+\cvlistitem{Work ethic}
+\cvlistitem{Fast learner, rapid development of new skills}
+
+\subsection{Technical Abilities}
+
+\cvcomputer{Programming Languages}{Python (medium), C++ (beginner)}{Technical Skills}{web security, forensics, binary analysis}
+\cvcomputer{Operating Systems}{Linux, Windows}{Tools and Applications}{Git, Ghidra, Burp Suite, John, Volatility, Aircrack}
+
+%\newpage
+%
+%\renewcommand\refname{Publications}
+%\renewcommand\bibname{Publications}
+%
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{../publications/publications}
+
+\end{document}
